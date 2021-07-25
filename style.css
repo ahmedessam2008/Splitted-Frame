@@ -1,0 +1,45 @@
+/* Global Prop  */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  padding: 20px 0;
+}
+.conta {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 15px solid #343a40;
+  border-radius: 10px;
+  position: relative;
+}
+.conta::after {
+  content: "";
+  position: absolute;
+  top: -3.5%;
+  right: -2%;
+  background-color: #343a40;
+  border-top: 15px solid #fff;
+  border-right: 15px solid #fff;
+  border-bottom: 15px solid #fff;
+  border-left: none;
+  border-top-left-radius: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: none;
+  width: 50%;
+  height: 107%;
+}
+.conta img {
+  z-index: 999;
+}
